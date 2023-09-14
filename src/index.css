@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "segoeui";
+  src: url('/assets/fonts/Segoe/SegoeUI.ttf');
+}
+
+@font-face {
+  font-family: "backto1982";
+  src: url('/assets/fonts/Back-To-1982/BACKTO1982.TTF');
+}
+
+@font-face {
+  font-family: "sportsball";
+  src: url('/assets/fonts/sportsball/Sportsball.ttf');
+}
+
+@font-face{
+  font-family: 'JetBrainsMono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.text-dull{
+  color: #868587;
+}
+
+.text-bright{
+  color: white;
+}
+
+/** Overriding reactjs-popup css here, don't touch please*/
+
+.popup-arrow {
+  display: none;
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+/* .popup-arrow {
+  color: rgb(255, 255, 255);
+} */
+
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+.styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_ {
+  background-color: transparent;
+  position: fixed;
+}
